@@ -1,0 +1,132 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dfe7fd; /* Jemná světle modrá barva */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 10px;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 500px;
+    border: solid 3px #274c77; /* Tmavě modrá barva */
+    border-radius: 22px;
+    padding: 20px;
+    background-color: #f6f9fc; /* Světlejší bílá barva */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h1 {
+    color: #274c77; /* Tmavě modrá */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #4c5c68; /* Šedá barva */
+    font-size: 1.5rem;
+}
+
+/* Pictures Section */
+.pictures {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.pictures img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 12px;
+    transition: transform 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.pictures img:hover {
+    transform: scale(1.2);
+    border: 3px solid #ff6b6b; /* Červená barva při najetí myší */
+}
+
+/* Bot Section */
+.bot h2:first-child {
+    color: #1b263b; /* Tmavě šedá */
+}
+
+.bot h2:last-child {
+    color: #ffa69e; /* Světle červená barva */
+}
+
+/* Points Section */
+.player-points, .bot-points {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.player-points h2, .bot-points h2 {
+    color: #00897b; /* Zelená barva */
+}
+
+.player-points h2:first-child, .bot-points h2:first-child {
+    color: #274c77; /* Tmavě modrá */
+}
+
+/* Hover Effect for Points */
+.player-points:hover h2:last-child,
+.bot-points:hover h2:last-child {
+    color: #ff6b6b; /* Červená barva při najetí myší */
+}
+
+/* Links and Images */
+a {
+    text-decoration: none;
+}
+
+a:hover img {
+    transform: scale(1.2);
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .pictures img {
+        width: 80px;
+    }
+}
+.pictures img {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover; 
+    border-radius: 12px; 
+    border: 2px solid transparent; 
+    transition: transform 0.2s ease-in-out, border 0.2s ease-in-out;
+}
